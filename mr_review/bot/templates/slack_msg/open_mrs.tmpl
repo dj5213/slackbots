@@ -1,0 +1,11 @@
+Outstanding merge requests:
+{{ range .Projects }}
+*{{ .Name}}*: {{ len .Mrs }}
+{{ if gt (len .Mrs) (5) }}5 oldest merge requests:{{ else }}Currently open merge requests (oldest first):{{ end }}
+{{ range .Mrs }}
+- <{{ .WebURL }}|{{ .Title }}>
+{{ end }}
+
+{{ end }}
+
+

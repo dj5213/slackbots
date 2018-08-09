@@ -1,0 +1,8 @@
+# List of Gitlab projects for Mr Review bot to monitor
+#
+# Projects should be in the form of:
+# - name: <NAME>
+#   pid: <PROJECT ID>
+
+- name: Example
+  pid: 1234
